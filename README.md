@@ -1,4 +1,9 @@
 # knife soloの練習プロジェクト
+## help
+忘れたらいつでもこれを見よ
+```
+knife solo cook  --help
+```
 
 ## sshオプション
 -i,-pなどはsshオプションとして働く
