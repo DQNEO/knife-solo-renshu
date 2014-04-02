@@ -3,6 +3,8 @@
 ## knife soloの使い方
 ```shell
 remote=ec2-xx-xx-xx-xx.ap-northeast-1.compute.amazonaws.com
+
+# remoteにChefクライアントがインストールされる
 knife solo prepare root@$remote
 
 # Chef-Soloがリモートで実行されるが、
