@@ -1,0 +1,12 @@
+{
+    "name":"greetall",
+    "chef_type":"role",
+    "json_class":"Chef::Role",
+    "run_list" : [
+        "greet::default",
+        "greet::hello",
+        "greet::morning"
+    ],
+    "default_attributes" : {
+    }
+}
