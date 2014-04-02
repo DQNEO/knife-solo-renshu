@@ -1,5 +1,13 @@
 # knife soloの練習プロジェクト
 
+## sshオプション
+-i,-pなどはsshオプションとして働く
+```
+knife solo cook -i ~/.ssh/myprivatekey -p 2222 user@host
+```
+sshコマンドと同じく、~/.ssh/configにデフォルト値を設定することができる。
+
+
 ## knife soloの使い方
 ```shell
 remote=ec2-xx-xx-xx-xx.ap-northeast-1.compute.amazonaws.com
