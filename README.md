@@ -23,7 +23,8 @@ knife solo cook root@$remote
 
 ### -N,--node-nameで任意のjsonファイルを指定できる
 ```
-knife solo cook --node-name nodes/hoge.json root@$remote
+# nodes/hoge.jsonを指定
+knife solo cook --node-name hoge root@$remote
 ```
 
 #### -o でrun_listを指定できる
