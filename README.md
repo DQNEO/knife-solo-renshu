@@ -15,7 +15,8 @@ knife solo prepare root@$remote
 # "Converging 0 resources"となる
 knife solo cook root@$remote
 
-
+# -N,--node-nameで任意のjsonファイルを指定できる
+knife solo cook --node-name nodes/hoge.json root@$remote
 
 # -o でrun_listを指定できる
 knife solo cook -o berkshelf-minimum root@$remote
