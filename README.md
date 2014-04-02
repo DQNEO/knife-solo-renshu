@@ -1,9 +1,9 @@
 # knife soloの練習プロジェクト
 
 ## 公式サイト
-レポジトリ
+* レポジトリ
 https://github.com/matschaffer/knife-solo
-公式マニュアル
+* 公式マニュアル
 https://github.com/matschaffer/knife-solo/blob/master/README.rdoc
 
 ## help
