@@ -33,5 +33,9 @@ knife solo cook -o greet root@$remote
 knife solo cook -o greet::default root@$remote
 knife solo cook -o recipe[greet::default] root@$remote
 
+# roleも指定できる
+knife solo cook -o role[greetall] root@$remote
+
 # カンマ区切りで複数指定できる
 knife solo cook -o greet::default,greet::morning root@$remote
+```
