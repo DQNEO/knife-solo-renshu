@@ -1,3 +1,3 @@
 source "https://api.berkshelf.com/"
 
-cookbook 'berkshelf-minimum', github: 'DQNEO/cookbook-berkshelf-minimum'
+cookbook 'hello', github: 'DQNEO/cookbook-berkshelf-minimum'
