@@ -6,7 +6,15 @@ https://github.com/matschaffer/knife-solo
 * 公式マニュアル
 https://github.com/matschaffer/knife-solo/blob/master/README.rdoc
 
+# knife soloの使い方
+
+## 準備編
+
+* 事前にリモートホストにパスワードなしでsudoできるユーザを作っておく
+* ssh user@remotehostで公開鍵認証ログインできるようにしておく
+
 ## help
+
 忘れたらいつでもこれを見よ
 ```
 knife solo cook  --help
@@ -19,8 +27,12 @@ knife solo cook -i ~/.ssh/myprivatekey -p 2222 user@host
 ```
 sshコマンドと同じく、~/.ssh/configにデフォルト値を設定することができる。
 
+## prepare
 
-## knife soloの使い方
+リモートホストにChefをインストールしてくれる。
+
+(逆に言うと、リモートホストに手動でChefDKを入れればいいだけなので、prepareは別に使う必要ない)
+
 ```shell
 remote=ec2-xx-xx-xx-xx.ap-northeast-1.compute.amazonaws.com
 
@@ -28,6 +40,7 @@ remote=ec2-xx-xx-xx-xx.ap-northeast-1.compute.amazonaws.com
 # nodes/${remote}.jsonが生成される
 knife solo prepare root@$remote
 ```
+
 
 ## cook
 
